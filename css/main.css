@@ -1,0 +1,177 @@
+/* RESET */
+:root {
+    font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    background-color: #fafafa;
+    color: #4c4e61;
+}
+
+h3 {
+    line-height: 2;
+}
+
+p {
+    color: #a3a5ae;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* SECTION */
+.feature {
+    max-width: 80%;
+    margin: 3rem auto;
+}
+
+.feature__heading {
+    grid-area: heading;
+    margin: 0 0 3rem;
+    text-align: center;
+}
+
+.feature__heading h2:first-child {
+    font-weight: 200;
+}
+
+.feature__heading p {
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.feature__card {
+    grid-area: card;
+}
+
+.feature__card .card {
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    -webkit-box-shadow: 0 3px 6px #a3a5ae;
+    box-shadow: 0 3px 6px #a3a5ae;
+}
+
+.feature__card .card.supervisor {
+    border-top: 5px solid #45d3d3;
+}
+
+.feature__card .card.team-builder {
+    border-top: 5px solid #ea5353;
+}
+
+.feature__card .card.karma {
+    border-top: 5px solid #fcaf4a;
+}
+
+.feature__card .card.calculator {
+    border-top: 5px solid #549ef2;
+}
+
+.feature__card .card p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.feature__card .card__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    margin: 2rem 0 0;
+}
+
+.feature__card .card__icon img {
+    display: inline-block;
+}
+
+.attribution {
+    text-align: center;
+    color: #fafafa;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 1rem 0;
+    background-color: #4c4e61;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: #ea5353;
+}
+
+/* tablet breakpoints */
+@media (min-width: 768px) {
+    .feature {
+        max-width: 50%;
+    }
+}
+
+/* desktop breakpoints */
+@media (min-width: 1024px) {
+    .feature {
+        max-width: 80%;
+    }
+
+    .feature__heading {
+        max-width: 40%;
+        margin: 0 auto 3rem;
+    }
+
+    .feature__card {
+        display: -ms-grid;
+        display: grid;
+        gap: 1.5rem;
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature__card .card {
+        margin: 0;
+    }
+
+    .feature__card .card.supervisor {
+        grid-row: span 2;
+        margin: 6.5rem 0;
+    }
+
+    .feature__card .card.team-builder {
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+        grid-column: 2 / 3;
+    }
+
+    .feature__card .card.karma {
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+        grid-column: 2 / 3;
+        -ms-grid-row: 2;
+        grid-row: 2 / 2;
+    }
+
+    .feature__card .card.calculator {
+        grid-row: span 2;
+        margin: 6.5rem 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .feature {
+        max-width: 65%;
+    }
+}
+
+/*# sourceMappingURL=main.css.map */
