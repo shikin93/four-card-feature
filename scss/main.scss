@@ -127,8 +127,12 @@ img {
     max-width: 80%;
 
     &__heading {
-      max-width: 40%;
+      max-width: 50%;
       margin: 0 auto 3rem;
+
+      h2 {
+        font-size: 1.5rem;
+      }
     }
 
     &__card {
@@ -164,6 +168,6 @@ img {
 
 @media (min-width: 1440px) {
   .feature {
-    max-width: 65%;
+    max-width: 70%;
   }
 }
